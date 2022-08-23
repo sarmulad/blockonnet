@@ -1,0 +1,169 @@
+body {
+  background: #161616;
+  overflow-x: hidden;
+  margin: 0;
+  top: 0 !important;
+}
+.container {
+  max-width: 1390px;
+}
+*,
+*:before,
+*:after,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+.goog-tooltip,
+#goog-gt-tt {
+  display: none !important;
+}
+.goog-tooltip:hover {
+  display: none !important;
+}
+.goog-text-highlight {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    180deg,
+    #ff6243 16.66%,
+    rgba(0, 176, 117, 0) 103.07%
+  );
+  border-radius: 10px;
+  &:hover {
+    background: linear-gradient(
+      180deg,
+      #ff6243 85.66%,
+      rgba(0, 176, 117, 0) 103.07%
+    );
+  }
+}
+
+a {
+  cursor: pointer;
+}
+
+.type-footer {
+  padding-block: 66px 88px;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 56px;
+  /* identical to box height, or 160% */
+
+  color: #ffffff;
+  text-align: center;
+  background: rgba(34, 34, 34, 0.2);
+}
+
+section {
+  overflow: hidden;
+}
+
+.step-2-intro {
+  // padding-block: 66px 88px;
+  // font-weight: 700;
+  // font-size: 35px;
+  // line-height: 56px;
+  color: #ffffff;
+  text-align: center;
+  background: rgba(34, 34, 34, 0.2);
+  
+  padding-block: 20px;
+}
+.tokenomics-content-area1 {
+  display: flex;
+  flex-direction: row;
+  padding-block: 100px;
+  width: 100%;
+  background-color: #9c2812;
+  .tokenomics-content {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    padding-inline: 25px;
+    .tokenomics-desc {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      max-width: 665px;
+      text-align: center;
+      h2 {
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 1.31;
+        color: #ffffff;
+        margin: 0;
+      }
+      p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #c5c5c5;
+      }
+    }
+  }
+}
+@media only screen and ( max-width: 1200px) {
+  .step-2-intro {
+   
+    color: #ffffff;
+    text-align: center;
+    background: rgba(34, 34, 34, 0.2);
+  }
+  .tokenomics-content-area1 {
+    display: flex;
+    flex-direction: column;
+    padding-block: 56px;
+    width: 100%;
+    background-color: #9c2812;
+    .tokenomics-content {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+      padding-inline: 20px;
+      .tokenomics-desc {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        max-width: 665px;
+        h2 {
+          display: none;
+        }
+        p {
+          font-size: 16px;
+          line-height: 24px;
+        }
+      }
+    }
+  }
+}

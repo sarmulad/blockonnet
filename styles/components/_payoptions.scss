@@ -1,0 +1,75 @@
+.after-connect-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.shift {
+  align-items: center;
+  justify-content: center;
+}
+.same {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.hhh {
+  padding: 20px 0px;
+  width: 100%;
+}
+
+.content-group {
+  padding-block: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.input-container {
+  width: 100%;
+  position: relative;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.input-field {
+  padding: 8px 12px;
+  position: relative;
+  width: 100%;
+  background: #3D231E;
+  
+  color: white;
+}
+.right-txt {
+  position: absolute;
+  right: 8px;
+  top: 18px;  
+  font-weight: 500;
+  font-size: 12.4675px;
+  line-height: 19px;
+  text-align: center;
+
+  color: #fff;
+}
+.heeaad1 {
+  font-size: 25px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.info-txt {
+  align-self: start;
+  margin-bottom: -10px;
+  font-size: 15px;
+}
+.same2 {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hold-button {
+    padding: 0px 50px;
+}

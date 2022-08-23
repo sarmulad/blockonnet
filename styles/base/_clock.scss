@@ -1,0 +1,111 @@
+.countdown-popup {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+  padding-block: 10px 25px;
+  min-height: 140px;
+  background: rgba(34, 34, 34, 0.7);
+  width: fit-content;
+  padding-inline: 35px;
+  margin-inline: 20px auto;
+  border-radius: 4px;
+  h5 {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 32px;
+    /* identical to box height */
+
+    text-align: center;
+
+    color: #ffffff;
+  }
+}
+.clock-area {
+  display: flex;
+  gap: 26px;
+  justify-content: center;
+  .clock-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+  }
+  .clock-number {
+    color: #fff;
+    border: 4px solid #e13412;
+    border-radius: 4px;
+    width: 72px;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  .countdown-popup {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    min-height: 140px;
+    padding-inline: 15px;
+    margin-inline: auto;
+    h5 {
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 28px;
+      /* identical to box height */
+
+      text-align: center;
+
+      color: #ffffff;
+    }
+  }
+  .clock-area {
+    display: flex;
+    gap: 26px;
+    justify-content: center;
+    .clock-item {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      text-transform: capitalize;
+      font-weight: 700;
+      font-size: 13px;
+      color: #fff;
+    }
+    .clock-number {
+      color: #fff;
+      border: 4px solid #e13412;
+      border-radius: 4px;
+      width: 66px;
+      height: 66px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 32px;
+      font-weight: 700;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .clock-area {
+    transform: scale(0.8);
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Codezone",
+  "homepage": ".",
+  "build": "build",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Codezone - React Next.js Template",
+  "main": "index.js",
+  "author": "codezonesoftware.com",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@material-ui/core": "^4.12.4",
+    "@mui/material": "^5.7.0",
+    "bootstrap": "^5.1.3",
+    "next": "12.1.6",
+    "next-images": "^1.8.4",
+    "next-optimized-images": "^2.6.2",
+    "node-sass": "^7.0.1",
+    "react": "18.1.0",
+    "react-bootstrap": "^2.3.1",
+    "react-dom": "18.1.0",
+    "read-more-react": "^1.0.10",
+    "sass": "^1.51.0",
+    "sass-loader": "^13.0.2",
+    "styled-components": "^5.3.5",
+    "swiper": "^8.3.1"
+  },
+  "devDependencies": {
+    "eslint": "8.14.0",
+    "eslint-config-next": "12.1.6"
+  }
+}

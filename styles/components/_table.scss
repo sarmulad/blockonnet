@@ -1,0 +1,194 @@
+section.table-section {
+  padding-block: 90px;
+  position: relative;
+  isolation: isolate;
+  color: #fff;
+  .table-bg {
+    position: absolute;
+    height: 100%;
+    aspect-ratio: 1512 / 1324;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+  .table-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 49px;
+    line-height: 56px;
+    text-align: center;
+    margin-bottom: 88px;
+  }
+  .table-content {
+    background: rgba(34, 34, 34, 0.7);
+    border: 1px solid #4c4c4c;
+    border-radius: 8px;
+    padding-block: 46px 100px;
+    padding-inline: 3vw;
+  }
+  table {
+    text-align: center;
+    color: #fff;
+    thead {
+      td,
+      th {
+        padding-block: 15px 20px;
+      }
+      tr {
+        th {
+          background-color: #d62f0e;
+          color: #fff;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 56px;
+          &:first-child {
+            visibility: hidden;
+          }
+          border: none;
+        }
+      }
+    }
+    tbody {
+      background-color: rgba($color: #d62f0e, $alpha: 0.1);
+      position: relative;
+      border: none !important;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        pointer-events: none;
+        background-color: rgba($color: #d62f0e, $alpha: 0.1);
+      }
+      td,
+      th {
+        padding-block: 25px 30px;
+      }
+      td {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 56px;
+        border: 1px solid #d62f0e;
+      }
+      th {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 56px;
+        border-bottom: none;
+        border-left: 1px solid #d62f0e;
+      }
+      tr:first-child {
+        th {
+          border-top: 1px solid #d62f0e;
+        }
+      }
+      tr:last-child {
+        th {
+          border-bottom: 1px solid #d62f0e;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  section.table-section {
+    padding-block: 90px;
+    position: relative;
+    isolation: isolate;
+    color: #fff;
+    .table-bg {
+      position: absolute;
+      height: 100%;
+      aspect-ratio: 1512 / 1324;
+      bottom: 0;
+      right: 0;
+      z-index: -1;
+      transform: translateY(20%);
+    }
+    .table-title {
+      font-size: 20px;
+      line-height: 56px;
+      margin-bottom: 18px;
+    }
+    .table-content {
+      background: rgba(34, 34, 34, 0.7);
+      border: 1px solid #4c4c4c;
+      border-radius: 8px;
+      padding-block: 46px 100px;
+      padding-inline: 3vw;
+    }
+    table {
+      text-align: center;
+      color: #fff;
+      thead {
+        td,
+        th {
+          padding-block: 15px 20px;
+        }
+        tr {
+          th {
+            font-size: 8px;
+            line-height: 12px;
+
+            &:first-child {
+              visibility: hidden;
+            }
+            border: none;
+          }
+        }
+      }
+      tbody {
+        background-color: rgba($color: #d62f0e, $alpha: 0.1);
+        position: relative;
+        border: none !important;
+        &::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 1;
+          pointer-events: none;
+          background-color: rgba($color: #d62f0e, $alpha: 0.1);
+        }
+        td,
+        th {
+          padding-block: 25px 30px;
+        }
+        td {
+          font-weight: 700;
+          font-size: 8px;
+          line-height: 1.2;
+          border: 1px solid #d62f0e;
+        }
+        th {
+          font-weight: 700;
+          font-size: 8px;
+          min-width: 45px;
+
+          line-height: 1.2;
+          border-bottom: none;
+          border-left: 1px solid #d62f0e;
+          span {
+            width: max-content;
+          }
+        }
+        tr:first-child {
+          th {
+            border-top: 1px solid #d62f0e;
+          }
+        }
+        tr:last-child {
+          th {
+            border-bottom: 1px solid #d62f0e;
+          }
+        }
+      }
+    }
+  }
+}

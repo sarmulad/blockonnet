@@ -1,0 +1,73 @@
+{
+  "menu": [
+    {
+      "links": "about",
+      "slug": "/#about"
+    },
+    {
+      "links": "Tokenomics",
+      "slug": "/tokenomics"
+    },
+    {
+      "links": "roadmap",
+      "slug": "/#roadmap"
+    },
+    {
+      "links": "whitepaper",
+      "slug": "./../whitepaper"
+    },
+    {
+      "links": "how to buy",
+      "slug": "/howToBuy"
+    },
+    {
+      "links": "FAQ",
+      "slug": "/#faq"
+    }
+  ],
+  "menuRegister": "BUY PRESALE",
+  "menuRegisterSlug": "/",
+  "hero": {
+    "subtitle": "Codezone Demo",
+    "title": "Another Some Next JS Project",
+    "desc": "Lorem ipsumdolor sit amet",
+    "btn": "Learn More",
+    "slug": "/"
+  },
+
+  "footer": {
+    "menu": [
+      {
+        "links": "About",
+        "slug": "/#about"
+      },
+      {
+        "links": "Whitepaper",
+        "slug": "/../whitepaper.pdf"
+      },
+      {
+        "links": "Tokenomics",
+        "slug": "/#tokenomics"
+      },
+      {
+        "links": "FAQ",
+        "slug": "/#faq"
+      },
+      {
+        "links": "How To Buy",
+        "slug": "/howToBuy"
+      },
+      {
+        "links": "Roadmap",
+        "slug": "/#roadmap"
+      },
+      {
+        "links": "Enter Presale",
+        "slug": "/"
+      }
+    ],
+    "presale": "Presale",
+    "presaleSlug": "/",
+    "copyright": "Copyright © 2022  All rights reserved  |  Codezone"
+  }
+}

@@ -1,0 +1,292 @@
+header {
+  position: absolute;
+  width: 100%;
+  padding-top: 38px;
+  z-index: 9;
+  &.type {
+    position: relative;
+    width: 100%;
+    padding-block: 38px;
+    z-index: 9;
+    background-color: #161616;
+  }
+  #google_translate_element {
+    .skiptranslate {
+      font-size: 0;
+      > span {
+        display: none;
+      }
+      select.goog-te-combo {
+        background-color: transparent;
+        border: none;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        cursor: pointer;
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 1;
+        text-transform: capitalize;
+        &:focus {
+          outline: none;
+        }
+        option {
+          color: #000;
+        }
+      }
+    }
+  }
+  .header-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    nav {
+      ul {
+        display: flex;
+
+        li {
+          list-style: none;
+          margin-left: 42px;
+          display: flex;
+          align-items: center;
+          a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 1;
+            text-transform: capitalize;
+            width: max-content;
+          }
+        }
+      }
+    }
+
+    .logo {
+      img.logo-lg {
+        display: block;
+      }
+      img.logo-sm {
+        display: none;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  header {
+    &.type {
+      position: absolute;
+      width: 100%;
+      padding-top: 38px;
+      z-index: 9;
+    }
+    .header-area {
+      nav {
+        ul {
+          li {
+            a {
+              font-size: 14px;
+              font-weight: 500;
+              &.btn-1 {
+                padding: 8px 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+    #google_translate_element {
+      .skiptranslate {
+        select.goog-te-combo {
+          background-color: #9c2812;
+          color: #fff;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 1;
+          option {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1199.98px) {
+  header {
+    position: absolute;
+    width: 100%;
+    padding-top: 38px;
+    transition: transform 1s ease-in-out;
+
+    .hamburger {
+      span {
+        width: 30px;
+        height: 3px;
+        border-radius: 5px;
+        background-color: #fff;
+        position: fixed;
+        transition: 1s ease-in-out;
+        &:first-child {
+          transform: translateY(0) rotate(0deg);
+          top: 58px;
+          right: 20px;
+        }
+        &:nth-child(2) {
+          transform: scale(1);
+          width: 20px;
+          top: 68px;
+          right: 20px;
+        }
+        &:last-child {
+          transform: translateY(0) rotate(0deg);
+          top: 78px;
+          right: 20px;
+        }
+      }
+      div {
+        position: fixed;
+        width: 30px;
+        height: 30px;
+        top: 58px;
+        right: 20px;
+        cursor: pointer;
+      }
+    }
+    .header-area {
+      nav {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        min-height: 100vh;
+        background: #9c2812;
+
+        z-index: -1;
+        transform-origin: top;
+        transform: scaleY(0);
+        transition: 0.5s ease-in-out;
+
+        ul {
+          display: block;
+
+          li {
+            list-style: none;
+            margin-left: 42px;
+            a {
+              font-size: 1rem;
+              color: #fff;
+              text-decoration: none;
+              &.btn-1 {
+                color: $c1;
+                font-weight: 700;
+                padding: 22px 42px;
+                border-radius: 35px;
+              }
+            }
+          }
+        }
+      }
+
+      .logo {
+        img.logo-sm {
+          display: block;
+          margin-top: 10px;
+        }
+        img.logo-lg {
+          display: none;
+        }
+      }
+    }
+
+    &.active {
+      .hamburger {
+        z-index: 999;
+        span {
+          &:first-child {
+            transform: translateY(10px) rotate(315deg);
+          }
+          &:last-child {
+            transform: translateY(-10px) rotate(-315deg);
+          }
+          &:nth-child(2) {
+            transform: scale(0);
+            width: 20px;
+            top: 68px;
+            right: 20px;
+          }
+        }
+      }
+      .header-area {
+        .logo {
+          position: fixed;
+          top: 38px;
+          left: 12px;
+        }
+        nav {
+          z-index: -1;
+          background-color: #9c2812;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          position: fixed;
+          margin: 0;
+          top: 0;
+          left: 0;
+          width: 100%;
+          min-height: 100vh;
+
+          transform: scaleY(1);
+
+          ul {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            padding: 0;
+
+            li {
+              list-style: none;
+              margin-inline: auto !important;
+              margin-bottom: 20px;
+              &:last-child {
+                margin-top: 40px;
+              }
+              a {
+                text-align: center;
+                font-size: 16px;
+                line-height: 24px;
+
+                color: #fff;
+                text-decoration: none;
+                &.btn-1 {
+                  font-weight: 700;
+                  padding: 22px 52px;
+                  border-radius: 35px;
+                  font-size: 16px;
+                  line-height: 24px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #google_translate_element {
+      .skiptranslate {
+        select.goog-te-combo {
+          background-color: #9c2812;
+          color: #fff;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 1;
+          option {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

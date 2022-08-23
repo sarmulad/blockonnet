@@ -1,0 +1,24 @@
+@import '~bootstrap/scss/bootstrap';
+
+@import './base/colors';
+
+@import './base/fonts';
+@import './base/base';
+@import './base/buttons';
+@import './base/clock';
+
+@import './components/header';
+@import './components/footer';
+
+@import './components/hero';
+@import './components/stages';
+@import './components/features';
+@import './components/nfts';
+@import './components/tokenomics';
+@import './components/tokenallocation';
+@import './components/roadmap';
+@import './components/faq';
+@import './components/unit';
+@import './components/table';
+@import './components/getinearly';
+@import './components/payoptions';

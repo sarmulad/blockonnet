@@ -1,0 +1,175 @@
+section.faq {
+  padding-bottom: 132px;
+  h2.faq-title {
+    font-weight: 700;
+    font-size: 49px;
+    line-height: 64px;
+    color: #ffffff;
+    margin-bottom: 65px;
+    text-align: center;
+  }
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 0;
+    max-width: 1136px;
+    margin-inline: auto;
+    .accordion-item {
+      background: #222222;
+      border-radius: 8px;
+      color: #fff;
+      .accordion-header {
+        button {
+          background-color: transparent;
+          color: #fff;
+          padding: 32px;
+          font-weight: 700;
+          font-size: 25px;
+          line-height: 32px;
+          color: #ffffff;
+          &:focus {
+            outline: none;
+            box-shadow: none;
+            border: none;
+          }
+        }
+
+        .accordion-button::after {
+          content: '';
+          position: absolute;
+          width: 8px;
+          height: 16px;
+          background-image: url('/images/chevron.png');
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+          right: 32px;
+          top: 50%;
+          transform: translate(0, -50%);
+        }
+        .accordion-button:not(.collapsed)::after {
+          content: '';
+          position: absolute;
+          width: 8px;
+          height: 16px;
+          background-image: url('/images/chevron.png');
+          background-size: contain;
+          background-position: center;
+          background-repeat: no-repeat;
+          right: 32px;
+          top: 50%;
+          transform: translate(0, -50%) rotate(90deg);
+        }
+      }
+      .accordion-body {
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 40px;
+        color: #818181;
+        padding-inline: 32px;
+        padding-block: 0 32px;
+      }
+    }
+  }
+  .ref-area {
+    margin-top: 132px;
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      max-width: 1136px;
+      margin-inline: auto;
+      li {
+        list-style: none;
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1199.98px) {
+  section.faq {
+    padding-bottom: 132px;
+    h2.faq-title {
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 40px;
+    }
+    .accordion {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      border-radius: 0;
+      max-width: 1136px;
+      margin-inline: auto;
+      .accordion-item {
+        background: #222222;
+        border-radius: 8px;
+        color: #fff;
+        .accordion-header {
+          button {
+            color: #fff;
+            padding: 20px 16px;
+            font-size: 16px;
+            line-height: 24px;
+            padding-right: 100px;
+          }
+
+          .accordion-button::after {
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 16px;
+            background-image: url('/images/chevron.png');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            right: 32px;
+            top: 50%;
+            transform: translate(0, -50%);
+          }
+          .accordion-button:not(.collapsed)::after {
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 16px;
+            background-image: url('/images/chevron.png');
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            right: 32px;
+            top: 50%;
+            transform: translate(0, -50%) rotate(90deg);
+          }
+        }
+        .accordion-body {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: #818181;
+          padding-inline: 16px;
+          padding-block: 0 24px;
+        }
+      }
+    }
+    .ref-area {
+      margin-top: 132px;
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+        max-width: 100%;
+        margin-inline: auto;
+        li {
+          list-style: none;
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
